@@ -2,83 +2,91 @@
 --primary-text-color: #757575;
 --second-text-color: #212121;
 --accent-text-color: #2196F3;
---whiеу-text-color: #FFFFFF;
+--white-text-color: #FFFFFF;
 }
+
 body {
-    color: #212121;
-    background-color: #FFFFFF;
+    color: var(--second-text-color);
+    background-color: var(--white-text-color);
     font-family: Robot, sans-serif;
     letter-spacing: 0.03em;
 }
+
 .navigator .accent {
-    color: #2196F3;
-    font-family: Raleway, cursive;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
+    color: var(--accent-text-color);
 }
+
 .navigator .logo {
-    color: #212121;
+    color: var(--second-text-color);
     font-family: Raleway, cursive;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
     text-decoration: none;
 }
-.nav-list a{
-    color: #212121;
+
+.nav-list a {
+    color: var(--second-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
 }
+
 .nav-list .link:hover,
 .nav-list .link:focus {
-color: #2196F3;
+    color: var(--accent-text-color);
 }
 
 .info-list a{
-    color: #757575;
+    color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
 }
+
 .info-list .link:hover,
 .info-list .link:focus {
-    color: #2196F3;
+    color: var(--accent-text-color);
 }
+
 .hero {
     background-color: #2F303A;
-    color: #FFFFFF;
+    color: var(--white-text-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
 }
+
 section .text {
-    color: #757575;
+    color: var(--primary-text-color);
     font-size: 14px;
     line-height: 1.71;
 }
+
 section .title{
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
 }
+
 .web .title{
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
 }
+
 .navigator a {
-    color: #212121;
+    color: var(--second-text-color);
 }
+
 .logo {
-    color: #FFFFFF;
+    color: var(--white-text-color);
 } 
 
 .web .name{
@@ -86,44 +94,52 @@ section .title{
     font-size: 16px;
     line-height: 1.2;
 }
+
 .web .profession{
     font-size: 16px;
     line-height: 1.2;
-    color: #757575;
+    color: var(--primary-text-color);
 }
+
 footer {
     background-color: #2F303A;
 }
+
 .navigator .type {
-    color: #FFFFFF;
+    color: var(--white-text-color);
     font-family: Raleway, cursive;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
     text-decoration: none;
 }
+
 .info-list .map{
-    color: #FFFFFF; 
+    color: var(--white-text-color); 
 }
 
 .info-list .contacts {
     color: rgba(255, 255, 255, 0.6);
 }
+
 .list{
     list-style: none;
 }
+
 .rank .title{
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
 }
+
 .rank .description{
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--primary-text-color);
 }
+
  button{
     font-weight: 500;
         font-size: 16px;
@@ -131,9 +147,10 @@ footer {
         text-align: center;
         background-color: #F5F4FA;
 } 
+
 button:hover,
 button:focus {
-    color: #FFFFFF;
-    background-color: #2196F3;
+    color: var(--white-text-color);
+    background-color: var(--accent-text-color);
     cursor: pointer;
 }
