@@ -39,6 +39,13 @@ body {
 .nav-list .link:active{
     color: var(--accent-text-color);
 }
+.nav-list .studio:visited {
+    color: var(--accent-text-color);
+}
+.nav-list .portfolio:visited {
+    color: var(--accent-text-color);
+}
+
 
 .info-list a{
     color: var(--primary-text-color);
@@ -71,22 +78,19 @@ body {
     line-height: 1.71;
 }
 
-.work .title{
+.work .title,{
+    font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;  
 }
 
-.web .title{
+.web .title,
+.team .title{
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
 }
 
-.team .title {
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-}
 
 .logo {
     color: var(--white-text-color);
@@ -136,36 +140,39 @@ footer {
     letter-spacing: 0.06em;
 }
 
-.none{
-    visibility: hidden;
-}
-.order{
-    font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 1.88;
-        letter-spacing: 0.06em;
+.work .none{
+    position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
 }
 
-.order:hover,
-.order:focus {
-    color: var(--white-text-color);
-    background-color: var(--accent-text-color);
-    cursor: pointer;
-}
 .address{
     font-style: normal;
 }
 .info-list .contacts:hover,
 .info-list .contacts:focus {
     color: var(--white-text-color);
-    background-color: var(--accent-text-color);
     cursor: pointer;
 }
 
 .portfolio .none{
-    visibility: hidden;
+    position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
 }
 .card .title{
         font-size: 18px;
@@ -189,10 +196,15 @@ footer {
       font-family: inherit;
   }
 .portfolio .all:hover,
-  button.portfolio .all:focus{
+.portfolio .all:focus{
     color: var(--white-text-color);
       background-color: var(--accent-text-color);
       cursor: pointer;
+  }
+  
+
+  .portfolio .all:active {
+      color: var(--accent-text-color);
   }
   .portfolio .web-link{
         font-weight: 500;
@@ -202,8 +214,8 @@ footer {
         background-color: #F5F4FA;
         font-family: inherit;
     }
-        .portfolio .web-link:hover,
-        button.portfolio .web-linkl:focus {
+.portfolio .web-link:hover,
+.portfolio .web-link:focus {
             color: var(--white-text-color);
             background-color: var(--accent-text-color);
             cursor: pointer;
@@ -218,7 +230,7 @@ footer {
               font-family: inherit;
           }
                 .portfolio .app:hover,
-                button.portfolio .app:focus {
+                .portfolio .app:focus {
                     color: var(--white-text-color);
                     background-color: var(--accent-text-color);
                     cursor: pointer;
@@ -232,7 +244,7 @@ footer {
     font-family: inherit;
 }
                                 .portfolio .design:hover,
-                                button.portfolio .design:focus {
+                                .portfolio .design:focus {
                                     color: var(--white-text-color);
                                     background-color: var(--accent-text-color);
                                     cursor: pointer;
@@ -247,8 +259,25 @@ footer {
     font-family: inherit;
 }
 .portfolio .mark:hover,
-button.portfolio .mark:focus {
+.portfolio .mark:focus {
     color: var(--white-text-color);
     background-color: var(--accent-text-color);
     cursor: pointer;
 }
+.hero .order {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+    background-color: var(--accent-text-color);
+    color: var(--white-text-color);
+    font-family: inherit;
+
+}
+
+.hero .order:hover,
+button.hero .order:focus {
+    background-color:var(--primary-text-color) ;
+    cursor: pointer;
+}
+
