@@ -201,7 +201,7 @@ footer {
       background-color: var(--accent-text-color);
       cursor: pointer;
   }
-  
+
 
   .portfolio .all:active {
       color: var(--accent-text-color);
@@ -280,4 +280,6 @@ button.hero .order:focus {
     background-color:var(--primary-text-color) ;
     cursor: pointer;
 }
+\
 
+вваів
