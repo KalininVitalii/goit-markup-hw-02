@@ -13,11 +13,11 @@ body {
     font-size: 14px;
 }
 
-.navigator .accent {
+.navigato-accent {
     color: var(--accent-text-color);
 }
 
-.navigator .logo {
+.navigator-logo {
     color: var(--second-text-color);
     font-family: Raleway, cursive;
     font-weight: 700;
@@ -25,6 +25,16 @@ body {
     line-height: 1.2;
     text-decoration: none;
 }
+.navigator-foot {
+     color: var(--white-text-color);
+     font-family: Raleway, cursive;
+     font-weight: 700;
+     font-size: 26px;
+     line-height: 1.2;
+     text-decoration: none;
+ }
+
+
 
 .nav-list a {
     color: var(--second-text-color);
@@ -35,7 +45,7 @@ body {
 }
 
 .nav-list .link:hover,
-.nav-list .link:focus,
+button .nav-list .link:focus,
 .nav-list .link:active{
     color: var(--accent-text-color);
 }
@@ -46,7 +56,6 @@ body {
     color: var(--accent-text-color);
 }
 
-
 .info-list a{
     color: var(--primary-text-color);
     font-weight: 500;
@@ -56,7 +65,7 @@ body {
 }
 
 .info-list .link:hover,
-.info-list .link:focus {
+button .info-list .link:focus {
     color: var(--accent-text-color);
 }
 
@@ -73,19 +82,18 @@ body {
     text-transform: uppercase;
 }
 
-.work .text {
+.work-text {
     color: var(--primary-text-color);
     line-height: 1.71;
 }
 
-.work .title,{
+.work-title {
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;  
 }
 
-.web .title,
-.team .title{
+.section-title{
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
@@ -96,13 +104,13 @@ body {
     color: var(--white-text-color);
 } 
 
-.team .name{
+.team-name{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
 }
 
-.team .profession{
+.team-profession{
     font-size: 16px;
     line-height: 1.2;
     color: var(--primary-text-color);
@@ -112,7 +120,7 @@ footer {
     background-color: #2F303A;
 }
 
-.navigator .type {
+.navigator-type {
     color: var(--white-text-color);
     font-family: Raleway, cursive;
     font-weight: 700;
@@ -133,36 +141,16 @@ footer {
     list-style: none;
 }
 
-.rank .title{
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-}
-
-.work .none{
-    position: absolute;
-        width: 1px;
-        height: 1px;
-        margin: -1px;
-        border: 0;
-        padding: 0;
-        white-space: nowrap;
-        clip-path: inset(100%);
-        clip: rect(0 0 0 0);
-        overflow: hidden;
-}
-
 .address{
     font-style: normal;
 }
 .info-list .contacts:hover,
-.info-list .contacts:focus {
-    color: var(--white-text-color);
+button .info-list .contacts:focus {
+    color: var(--accent-text-color);
     cursor: pointer;
 }
 
-.portfolio .none{
+.visually-hidden{
     position: absolute;
         width: 1px;
         height: 1px;
@@ -174,39 +162,39 @@ footer {
         clip: rect(0 0 0 0);
         overflow: hidden;
 }
-.card .title{
+.card-title{
         font-size: 18px;
         line-height: 2;
         letter-spacing: 0.06em;
 }
 
-.card .description {
+.card-description {
      font-size: 16px;
      line-height: 1.88;
-     letter-spacing: 0.03em;
      color: var(--primary-text-color);
  }
 
-.portfolio .all {
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 1.63;
-      text-align: center;
-      background-color: #F5F4FA;
-      font-family: inherit;
+.portfolio-all {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+    color: var(--white-text-color);
+    background-color: #F5F4FA;
+    font-family: inherit;
   }
-.portfolio .all:hover,
-.portfolio .all:focus{
+.portfolio-all:hover,
+button .portfolio-all:focus{
     color: var(--white-text-color);
       background-color: var(--accent-text-color);
       cursor: pointer;
   }
 
 
-  .portfolio .all:active {
+  .portfolio-all:active {
       color: var(--accent-text-color);
   }
-  .portfolio .web-link{
+  .web-link{
         font-weight: 500;
         font-size: 16px;
         line-height: 1.63;
@@ -214,14 +202,13 @@ footer {
         background-color: #F5F4FA;
         font-family: inherit;
     }
-.portfolio .web-link:hover,
-.portfolio .web-link:focus {
+.web-link:hover,
+button .web-link:focus {
             color: var(--white-text-color);
             background-color: var(--accent-text-color);
             cursor: pointer;
         }
-
-          .portfolio .app {
+.portfolio-app {
               font-weight: 500;
               font-size: 16px;
               line-height: 1.63;
@@ -229,13 +216,13 @@ footer {
               background-color: #F5F4FA;
               font-family: inherit;
           }
-                .portfolio .app:hover,
-                .portfolio .app:focus {
+.portfolio-app:hover,
+button .portfolio-app:focus {
                     color: var(--white-text-color);
                     background-color: var(--accent-text-color);
                     cursor: pointer;
                 }
-.portfolio .design {
+.portfolio-design {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
@@ -243,14 +230,14 @@ footer {
     background-color: #F5F4FA;
     font-family: inherit;
 }
-                                .portfolio .design:hover,
-                                .portfolio .design:focus {
-                                    color: var(--white-text-color);
-                                    background-color: var(--accent-text-color);
-                                    cursor: pointer;
+.portfolio-design:hover,
+button .portfolio-design:focus {
+                        color: var(--white-text-color);
+                        background-color: var(--accent-text-color);
+                        cursor: pointer;
                                 }
 
-.portfolio .mark {
+.portfolio-mark {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
@@ -258,13 +245,13 @@ footer {
     background-color: #F5F4FA;
     font-family: inherit;
 }
-.portfolio .mark:hover,
-.portfolio .mark:focus {
+.portfolio-mark:hover,
+button .portfolio-mark:focus {
     color: var(--white-text-color);
     background-color: var(--accent-text-color);
     cursor: pointer;
 }
-.hero .order {
+.hero-order {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
@@ -275,8 +262,8 @@ footer {
 
 }
 
-.hero .order:hover,
-button.hero .order:focus {
+.hero-order:hover,
+button .hero-order:focus {
     background-color:var(--primary-text-color) ;
     cursor: pointer;
 }
