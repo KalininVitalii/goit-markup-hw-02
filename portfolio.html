@@ -1,113 +1,141 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-            rel="stylesheet">
-        <link rel="stylesheet" href="./css/styles.css" />
-    </head>
-    
-    <body>
-        <!-- Шапка -->
-        <header>
-            <nav class="navigator">
-                <a href="./index.html" class="navigator-logo"><span class="navigato-accent">Web</span>Studio</a>
-                <ul class="nav-list list">
-                    <Li><a href="./index.html" class="link">Студия</a></Li>
-                    <Li><a href="./portfolio.html" class="portfolio link">Портфолио</a></Li>
-                    <Li><a href="" class="link">Контакты</a></Li>
-                </ul>
-            </nav>
-            <ul class="info-list list">
-                <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-                <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
-            </ul>
-        </header>
+  <body>
+    <!-- Шапка -->
+    <header class="header-border">
+      <div class="container navigato-flex">
+        <nav class="navigator">
+          <a href="./index.html" class="navigator-logo"
+            ><span class="navigato-accent">Web</span>Studio</a
+          >
+          <ul class="nav-list list">
+            <li class="navinfo-flex"><a href="./index.html" class="link">Студия</a></li>
+            <li class="navinfo-flex">
+              <a href="./portfolio.html" class="portfolio link">Портфолио</a>
+            </li>
+            <li class="navinfo-flex"><a href="" class="link">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="info-list list info-flex">
+          <li class="contacts-flex">
+            <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+          </li>
+          <li class="contacts-flex">
+            <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+          </li>
+        </ul>
+      </div>
+    </header>
 
     <main>
-        <!-- Заказ услуг -->
-        <section class="portfolio"> 
-            <h1 class="visually-hidden"> Партфолио</h1>
-            <ul class="btn-list list">
-                <li>
-                    <button type="button" class="portfolio-all">Все</button>
-                </li>
-                <li>
-                <button type="button" class="web-link">Веб-сайты</button>
-                </li>
-                <li>
-                    <button type="button" class="portfolio-app">Приложения</button>
-                </li>
-                <li>
-                    <button type="button" class="portfolio-design">Дизайн</button>
-                </li>
-                <li>
-                    <button type="button" class="portfolio-mark">Маркетинг</button>
-                </li>
-            </ul>
+      <!-- Заказ услуг -->
+      <div class="container container">
+        <section class="portfolio section">
+          <h1 class="visually-hidden">Партфолио</h1>
+          <ul class="btn-list list">
+            <li class="dtnlist-flex">
+              <button type="button" class="portfolio-all">Все</button>
+            </li>
+            <li class="dtnlist-flex">
+              <button type="button" class="web-link">Веб-сайты</button>
+            </li>
+            <li class="dtnlist-flex">
+              <button type="button" class="portfolio-app">Приложения</button>
+            </li>
+            <li class="dtnlist-flex">
+              <button type="button" class="portfolio-design">Дизайн</button>
+            </li>
+            <li class="dtnlist-flex">
+              <button type="button" class="portfolio-mark">Маркетинг</button>
+            </li>
+          </ul>
 
-            <ul class="card list">
-                <li><img src="./images/notebook.jpg" alt="ноутбук" width="370">
-                    <h2 class="card-title">Технокряк</h2>
-                     <p class="card-description">Веб-сайт</p>
-                </li>
-                <li><img src="./images/basketball.jpg" alt="баскетбол" width="370">
-                    <h2 class="card-title">Постер New Orlean vs Golden Star</h2>
-                    <p class="card-description">Дизайн</p>
-                </li>
-                <li>
-                    <img src="./images/logoseafood.jpg" alt="логотип ресторана" width="370">
-                    <h3 class="card-title">Ресторан Seafood</h3>
-                    <p class="card-description">Приложение</p>
-                </li>
-                <li>
-                    <img src="./images/headphones.jpg" alt="наушники" width="370">
-                    <h3 class="card-title">Проект Prime</h3>
-                    <p class="card-description">Маркетинг</p>
-                </li>
-                <li>
-                    <img src="./images/boxes.jpg" alt="коробки" width="370">
-                    <h2 class="card-title">Проект Boxes</h2>
-                    <p class="card-description">Приложение</p>
-                </li>
-                <li>
-                    <img src="./images/monitor.jpg" alt="монитор" width="370">
-                    <h2 class="card-title">Inspiration has no Borders</h2>
-                    <p class="card-description">Веб-сайт</p>
-                </li>
-                <li>
-                    <img src="./images/book.jpg" alt="книга" width="370">
-                    <h2 class="card-title">Издание Limited Edition</h2>
-                    <p class="card-description">Дизайн</p>
-                </li>
-                <li>
-                    <img src="./images/label.jpg" alt="лейбл" width="370">
-                    <h2 class="card-title">Проект LAB</h2>
-                    <p class="card-description">Маркетинг</p>
-                </li>
-                <li>
-                    <img src="./images/notebookwork.jpg" alt="ноутбук" width="370">
-                    <h2 class="card-title">Growing Business</h2>
-                    <p class="card-description">Приложение</p>
-                </li>
-            </ul>
+          <ul class="card list card-padding">
+            <li class="portfolio-flex">
+              <img src="./images/notebook.jpg" alt="ноутбук" width="370" />
+              <h2 class="card-title">Технокряк</h2>
+              <p class="card-description">Веб-сайт</p>
+            </li>
+            <li class="portfolio-flex">
+              <img src="./images/basketball.jpg" alt="баскетбол" width="370" />
+              <h2 class="card-title">Постер New Orlean vs Golden Star</h2>
+              <p class="card-description">Дизайн</p>
+            </li>
+            <li class="portfolio-flex">
+              <img src="./images/logoseafood.jpg" alt="логотип ресторана" width="370" />
+              <h3 class="card-title">Ресторан Seafood</h3>
+              <p class="card-description">Приложение</p>
+            </li>
+            <li class="portfolio-flex">
+              <img src="./images/headphones.jpg" alt="наушники" width="370" />
+              <h3 class="card-title">Проект Prime</h3>
+              <p class="card-description">Маркетинг</p>
+            </li>
+            <li class="portfolio-flex">
+              <img src="./images/boxes.jpg" alt="коробки" width="370" />
+              <h2 class="card-title">Проект Boxes</h2>
+              <p class="card-description">Приложение</p>
+            </li>
+            <li class="portfolio-flex">
+              <img src="./images/monitor.jpg" alt="монитор" width="370" />
+              <h2 class="card-title">Inspiration has no Borders</h2>
+              <p class="card-description">Веб-сайт</p>
+            </li>
+            <li class="portfolio-flex">
+              <img src="./images/book.jpg" alt="книга" width="370" />
+              <h2 class="card-title">Издание Limited Edition</h2>
+              <p class="card-description">Дизайн</p>
+            </li>
+            <li class="portfolio-flex">
+              <img src="./images/label.jpg" alt="лейбл" width="370" />
+              <h2 class="card-title">Проект LAB</h2>
+              <p class="card-description">Маркетинг</p>
+            </li>
+            <li class="portfolio-flex">
+              <img src="./images/notebookwork.jpg" alt="ноутбук" width="370" />
+              <h2 class="card-title">Growing Business</h2>
+              <p class="card-description">Приложение</p>
+            </li>
+          </ul>
         </section>
+      </div>
     </main>
 
-        <footer class="navigator">
-            <a href="./index.html" class="navigator-foot"><span class="navigato-accent">Web</span>Studio</a>
-            <address class="address">
-                <ul class="info-list list">
-                    <li><a href="" class="map">г. Киев, пр-т Леси Украинки, 26</a></li>
-                    <li><a href="mailto:info@example.com" class="contacts">info@example.com</a></li>
-                    <li><a href="tel:+380991111111" class="contacts">+38 099 111 11 11</a></li>
-                </ul>
-            </address>
-        </footer>>
-</body>
+    <footer class="navigator">
+      <div class="container nav-container">
+        <a href="./index.html" class="navigator-foot"
+          ><span class="navigato-accent">Web</span>Studio</a
+        >
+        <address class="address">
+          <ul class="info-list list address-flex">
+            <li class="infoaddress-flex">
+              <a href="" class="map">г. Киев, пр-т Леси Украинки, 26</a>
+            </li>
+            <li class="infoaddress-flex">
+              <a href="mailto:info@example.com" class="contacts">info@example.com</a>
+            </li>
+            <li class="infoaddress-flex">
+              <a href="tel:+380991111111" class="contacts">+38 099 111 11 11</a>
+            </li>
+          </ul>
+        </address>
+      </div>
+    </footer>
+  </body>
 </html>
